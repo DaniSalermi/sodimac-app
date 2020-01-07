@@ -1,0 +1,36 @@
+.container {
+  margin-top: 100px;
+  margin-left: 300px;
+  margin-right: 300px;
+  .hall {
+    margin-left: 405px;
+  }
+  .container-hall {
+    text-align: center;
+    .input-hall {
+      padding-top: -10px;
+    }
+    .input-name {
+      padding-top: 10px;
+    }
+  }
+  .search {
+    padding-top: 15px;
+    .btn-search {
+      font-size: 20px;
+      background-color: #c72729ca;
+      color: #fff;
+      border-bottom: 3px solid #4e3a5d;
+
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #dd0021;
+      color: #fff;
+    }
+  }
+  input {
+    border: 1px solid black;
+    height: 25px;
+  }
+}

@@ -1,1 +1,26 @@
-<p>assistant works!</p>
+<div class="container">
+  <div class="hall">
+    <h3>Pasillo</h3>
+  </div>
+  <div class="container-hall">
+    <div class="input-hall">
+      <input
+        type="number"
+        placeholder="  Numero de pasillo"
+        [formControl]="hallNumber"
+      />
+    </div>
+    <div class="input-name">
+      <input
+        type="text"
+        placeholder="  Ingresa tu Nombre"
+        [formControl]="name"
+      />
+    </div>
+    <div class="search">
+      <button class="btn-search" type="submit" (click)="btnSale()">
+        Solicitar Vendedor
+      </button>
+    </div>
+  </div>
+</div>
