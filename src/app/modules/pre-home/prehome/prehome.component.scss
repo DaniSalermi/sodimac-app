@@ -1,0 +1,44 @@
+@media (max-width: 600px) {
+  .container {
+    text-align: center;
+    .div-mode {
+      position: absolute;
+      width: 199px;
+      height: 71px;
+      left: 90px;
+      top: 97px;
+      font-family: Lato;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 22px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+
+      color: #1f1f1f;
+    }
+    .btn-store {
+      background-color: #dd0021;
+
+      position: absolute;
+      width: 187px;
+      height: 36px;
+      left: 90px;
+      top: 242px;
+      color: #fff;
+      box-shadow: 1px #dd0021;
+    }
+
+    .btn-online {
+      position: absolute;
+      width: 187px;
+      height: 36px;
+      left: 90px;
+      top: 332px;
+      background-color: #dd0021;
+      color: #fff;
+      box-shadow: 1px #dd0021;
+    }
+  }
+}
