@@ -1,0 +1,18 @@
+<p>planning-list works!</p>
+
+Probando la consulta de productos:
+<div *ngFor="let product of products">
+    <h4>{{ product.payload.doc.data().name }}</h4>
+    <div>{{ product.payload.doc.data().sku }}</div>
+    <!-- <div>{{ }}</div> -->
+</div>
+
+Probando la consulta de listas:
+<div *ngIf="showMeThePlan">
+<div *ngFor="let list of planLists">
+    <h4>{{ list.payload.doc.data().plan_name }}</h4>
+    <div>muestra del primer elemento de la lista{{ list.payload.doc.data().products[0] }}</div>
+    <!-- <div>{{ }}</div> -->
+</div>
+</div>
+
