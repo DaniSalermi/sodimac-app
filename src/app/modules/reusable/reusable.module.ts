@@ -1,13 +1,10 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
-
-
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { NavigationBarComponent } from "./navigation-bar/navigation-bar.component";
 
 @NgModule({
   declarations: [NavigationBarComponent],
-  imports: [
-    CommonModule
-  ]
+  imports: [CommonModule],
+  exports: [NavigationBarComponent]
 })
-export class ReusableModule { }
+export class ReusableModule {}
