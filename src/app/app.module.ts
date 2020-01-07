@@ -16,7 +16,8 @@ import { ReusableModule } from "./modules/reusable/reusable.module";
     MyPlanningModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    ReusableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
