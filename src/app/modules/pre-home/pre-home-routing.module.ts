@@ -2,7 +2,7 @@ import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 import { PrehomeComponent } from "./prehome/prehome.component";
 
-const routes: Routes = [{ path: "Bienvenides", component: PrehomeComponent }];
+const routes: Routes = [{ path: "", component: PrehomeComponent }];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

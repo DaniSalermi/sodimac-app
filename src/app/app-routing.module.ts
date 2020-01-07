@@ -12,7 +12,7 @@ const routes: Routes = [
       )
   },
   {
-    path: "Bienvenidos",
+    path: "bienvenidos",
     loadChildren: () =>
       import("./modules/pre-home/pre-home.module").then(
         mod => mod.PreHomeModule

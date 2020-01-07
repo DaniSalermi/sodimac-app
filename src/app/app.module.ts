@@ -5,6 +5,7 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { VendorAssistModule } from "./modules/vendor-assist/vendor-assist.module";
 import { PreHomeModule } from "./modules/pre-home/pre-home.module";
+import { ReusableModule } from "./modules/reusable/reusable.module";
 
 @NgModule({
   declarations: [AppComponent],
@@ -14,7 +15,8 @@ import { PreHomeModule } from "./modules/pre-home/pre-home.module";
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    PreHomeModule
+    PreHomeModule,
+    ReusableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
