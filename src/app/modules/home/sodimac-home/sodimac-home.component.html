@@ -1,0 +1,28 @@
+<div class='container-fluid'>    
+    <div class="row" style="padding: 20px;">    
+        <div class="col-sm-12 btn btn-success">    
+         Sodimiau
+        </div>    
+    </div>    
+    <owl-carousel [options]="SlideOptions" [items]="img/carousel-ppal" [carouselClasses]="['owl-theme', 'sliding']" >  
+        <div class="item" *ngFor="let img of ImgCarouselPpal">  
+            <div style="align-content: center">  
+                <img style="height: 260px;width:100%"src={{img}}/>  
+            </div>  
+        </div>  
+    </owl-carousel> 
+    <owl-carousel [options]="SlideOptions" [items]="img/carousel-prod" [carouselClasses]="['owl-theme', 'sliding']" >  
+        <div class="item" *ngFor="let img of ImgCarouselProd">  
+            <div style="align-content: center">  
+                <img style="height: 260px;width:100%"src={{img}}/>  
+            </div>  
+        </div>  
+    </owl-carousel>
+    <owl-carousel [options]="SlideOptions" [items]="img/publicidad" [carouselClasses]="['owl-theme', 'sliding']" >  
+        <div class="item" *ngFor="let img of ImgCarouselPub">  
+            <div style="align-content: center">  
+                <img style="height: 160px;width:100%"src={{img}}/>  
+            </div>  
+        </div>  
+    </owl-carousel>   
+</div> 

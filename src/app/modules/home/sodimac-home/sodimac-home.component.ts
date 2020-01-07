@@ -1,0 +1,40 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-sodimac-home',
+  templateUrl: './sodimac-home.component.html',
+  styleUrls: ['./sodimac-home.component.scss']
+})
+export class SodimacHomeComponent implements OnInit {
+
+  ImgCarouselPpal = [
+    '../../../../assets/img/carousel-ppal/vmb-terrazas-03012020-b.jpg',
+    '../../../../assets/img/carousel-ppal/vmb-tableros-03012020-b.jpg',
+    '../../../../assets/img/carousel-ppal/vmb-especial-verano-03012020.jpg',
+    '../../../../assets/img/carousel-ppal/vmb-closet-03012020.jpg',
+    '../../../../assets/img/carousel-ppal/vmb-climatizacion-03012020.jpg',
+    '../../../../assets/img/carousel-ppal/vmb-ceramicas-03012020.jpg'
+  ];
+
+  ImgCarouselProd = [
+    '../../../../assets/img/carousel-prod/bnn-ond-3559645-03012020.jpg',
+    '../../../../assets/img/carousel-prod/bnn-ond-3350711-03012020.jpg'
+  ];
+
+  ImgCarouselPub = [
+    '../../../../assets/img/publicidad/nuevoCatalogo-05-11062019.jpg',
+    '../../../../assets/img/publicidad/bnn-votados-a.jpg',
+    '../../../../assets/img/publicidad/bnn-pnp-small.jpg'
+  ];
+
+  SlideOptions = { items: 1, dots: true, nav: true };
+  CarouselPpalOptions = { items: 6, dots: true, nav: true };
+  CarouselProdOptions = { items: 2, dots: true, nav: true };
+  CarouselPubOptions = { items: 3, dots: true, nav: true };
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}
