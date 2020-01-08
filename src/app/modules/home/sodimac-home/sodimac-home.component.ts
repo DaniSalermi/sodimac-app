@@ -35,8 +35,8 @@ export class SodimacHomeComponent implements OnInit {
   CarouselPpalOptions = { items: 6, dots: true, nav: true };
   CarouselPubOptions = { items: 3, dots: true, nav: true };
 
-  folderCarouselPpal = 'img/carousel-ppal';
-  folderPublicidad = 'img/publicidad';
+  folderCarouselPpal = ['img/carousel-ppal'];
+  folderPublicidad = ['img/publicidad'];
 
   constructor() { }
 
