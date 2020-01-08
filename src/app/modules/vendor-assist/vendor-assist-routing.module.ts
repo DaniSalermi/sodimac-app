@@ -4,7 +4,7 @@ import { AssistantComponent } from "./assistant/assistant.component";
 
 const routes: Routes = [
   {
-    path: "",
+    path: "assistant",
     component: AssistantComponent
   }
 ];

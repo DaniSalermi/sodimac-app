@@ -1,25 +1,34 @@
-<div class='container-fluid sodimacHome'>
-    <app-header></app-header>   
-   
-    <owl-carousel [options]="SlideOptions" [items]="folderCarouselPpal" [carouselClasses]="['owl-theme', 'sliding']" >  
-        <div class="item" *ngFor="let img of ImgCarouselPpal">  
-            <div style="align-content: center">  
-                <img style="height: 260px;width:100%" src={{img}}/>  
-            </div>  
-        </div>  
-    </owl-carousel> 
-    <div class="scrollProd">  
-        <div  *ngFor="let img of ImgProducts">  
-            <div>  
-                <img class="ImgProd" src={{img}}/>  
-            </div>  
-        </div>  
+<div class="container-fluid sodimacHome">
+  <app-header></app-header>
+
+  <owl-carousel
+    [options]="SlideOptions"
+    [items]="folderCarouselPpal"
+    [carouselClasses]="['owl-theme', 'sliding']"
+  >
+    <div class="item" *ngFor="let img of ImgCarouselPpal">
+      <div style="align-content: center">
+        <img style="height: 260px;width:100%" src="{{ img }}" />
+      </div>
     </div>
-    <owl-carousel [options]="SlideOptions" [items]="folderPublicidad" [carouselClasses]="['owl-theme', 'sliding']" >  
-        <div class="item" *ngFor="let img of ImgCarouselPub">  
-            <div style="align-content: center">  
-                <img style="height: 85px;width:100%" src={{img}}/>  
-            </div>  
-        </div>  
-    </owl-carousel>   
-</div> 
+  </owl-carousel>
+  <div class="scrollProd">
+    <div *ngFor="let img of ImgProducts">
+      <div>
+        <img class="ImgProd" src="{{ img }}" />
+      </div>
+    </div>
+  </div>
+  <owl-carousel
+    [options]="SlideOptions"
+    [items]="folderPublicidad"
+    [carouselClasses]="['owl-theme', 'sliding']"
+  >
+    <div class="item" *ngFor="let img of ImgCarouselPub">
+      <div style="align-content: center">
+        <img style="height: 85px;width:100%" src="{{ img }}" />
+      </div>
+    </div>
+  </owl-carousel>
+</div>
+<app-navigation-bar></app-navigation-bar>

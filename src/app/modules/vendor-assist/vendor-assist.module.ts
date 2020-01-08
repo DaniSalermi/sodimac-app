@@ -4,6 +4,7 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { VendorAssistRoutingModule } from "./vendor-assist-routing.module";
 import { AssistantComponent } from "./assistant/assistant.component";
 import { ReusableModule } from "../reusable/reusable.module";
+import { HomeModule } from "../home/home.module";
 
 @NgModule({
   declarations: [AssistantComponent],
@@ -12,7 +13,8 @@ import { ReusableModule } from "../reusable/reusable.module";
     VendorAssistRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    ReusableModule
+    ReusableModule,
+    HomeModule
   ],
   exports: [AssistantComponent]
 })
