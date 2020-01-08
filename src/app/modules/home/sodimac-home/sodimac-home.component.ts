@@ -16,9 +16,13 @@ export class SodimacHomeComponent implements OnInit {
     '../../../../assets/img/carousel-ppal/vmb-ceramicas-03012020.jpg'
   ];
 
-  ImgCarouselProd = [
-    '../../../../assets/img/carousel-prod/bnn-ond-3559645-03012020.jpg',
-    '../../../../assets/img/carousel-prod/bnn-ond-3350711-03012020.jpg'
+  ImgProducts = [
+    '../../../../assets/img/carousel-prod/prod1.png',
+    '../../../../assets/img/carousel-prod/prod2.png',
+    '../../../../assets/img/carousel-prod/prod3.png',
+    '../../../../assets/img/carousel-prod/prod4.png',
+    '../../../../assets/img/carousel-prod/prod5.png',
+    '../../../../assets/img/carousel-prod/prod6.png'
   ];
 
   ImgCarouselPub = [
@@ -29,7 +33,6 @@ export class SodimacHomeComponent implements OnInit {
 
   SlideOptions = { items: 1, dots: true, nav: true };
   CarouselPpalOptions = { items: 6, dots: true, nav: true };
-  CarouselProdOptions = { items: 2, dots: true, nav: true };
   CarouselPubOptions = { items: 3, dots: true, nav: true };
 
   constructor() { }
