@@ -10,7 +10,7 @@ import { ReusableModule } from "../reusable/reusable.module";
 @NgModule({
   declarations: [SodimacHomeComponent, HeaderComponent],
   imports: [CommonModule, HomeRoutingModule, OwlModule, ReusableModule],
-  exports: [SodimacHomeComponent],
+  exports: [SodimacHomeComponent, HeaderComponent],
   providers: [],
   bootstrap: [SodimacHomeComponent]
 })
