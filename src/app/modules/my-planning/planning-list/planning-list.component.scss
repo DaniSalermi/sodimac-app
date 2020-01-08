@@ -1,0 +1,36 @@
+.planningWrapper {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.planifTitle{
+    border-bottom: 4px double #66AFE7;
+}
+
+.eachPlanWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.firstProdImg {
+  width: 160px;
+  height: auto;
+
+  img {
+    width: 100%;
+  }
+}
+
+.planName {
+  font-size: 1.2rem;
+}
+
+.planStore {
+  font-size: 1rem;
+}
