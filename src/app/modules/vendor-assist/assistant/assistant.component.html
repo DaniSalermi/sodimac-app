@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="container-input">
+    <div class="p-hall">
+      <p class="hall">Pasillo</p>
+    </div>
+
+    <div class="input-hall">
+      <input
+        type="number"
+        placeholder="  Numero de pasillo"
+        [formControl]="hallNumber"
+      />
+    </div>
+    <p>Nombre Cliente</p>
+    <div class="input-name">
+      <input
+        type="text"
+        placeholder="  Ingresa tu Nombre"
+        [formControl]="name"
+      />
+    </div>
+    <div class="search">
+      <button class="btn-assistant" type="submit" (click)="btnSale()">
+        Solicitar Asistencia
+      </button>
+    </div>
+  </div>
+</div>
+<app-navigation-bar></app-navigation-bar>

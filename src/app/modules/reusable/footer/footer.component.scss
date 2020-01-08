@@ -1,0 +1,16 @@
+@media (max-width: 600px) {
+  .container {
+    position: absolute;
+    width: 400px;
+    height: 57px;
+    left: 0;
+    top: 610px;
+    background-color: #0072ce;
+    .text {
+      color: #fff;
+      p {
+        padding-left: 135px;
+      }
+    }
+  }
+}
