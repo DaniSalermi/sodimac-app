@@ -1,10 +1,10 @@
 <div class='container-fluid sodimacHome'>
     <app-header></app-header>   
    
-    <owl-carousel [options]="SlideOptions" [items]="img/carousel-ppal" [carouselClasses]="['owl-theme', 'sliding']" >  
+    <owl-carousel [options]="SlideOptions" [items]="folderCarouselPpal" [carouselClasses]="['owl-theme', 'sliding']" >  
         <div class="item" *ngFor="let img of ImgCarouselPpal">  
             <div style="align-content: center">  
-                <img style="height: 260px;width:100%"src={{img}}/>  
+                <img style="height: 260px;width:100%" src={{img}}/>  
             </div>  
         </div>  
     </owl-carousel> 
@@ -15,10 +15,10 @@
             </div>  
         </div>  
     </div>
-    <owl-carousel [options]="SlideOptions" [items]="img/publicidad" [carouselClasses]="['owl-theme', 'sliding']" >  
+    <owl-carousel [options]="SlideOptions" [items]="folderPublicidad" [carouselClasses]="['owl-theme', 'sliding']" >  
         <div class="item" *ngFor="let img of ImgCarouselPub">  
             <div style="align-content: center">  
-                <img style="height: 85px;width:100%"src={{img}}/>  
+                <img style="height: 85px;width:100%" src={{img}}/>  
             </div>  
         </div>  
     </owl-carousel>   
