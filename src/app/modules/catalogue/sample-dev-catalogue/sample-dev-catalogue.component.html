@@ -1,0 +1,13 @@
+<p>sample-dev-catalogue works!</p>
+
+<div class="sampleCatalogueWrapper">
+    <div *ngIf="showTheProducts" class="eachProductWrapper">
+        <div *ngFor="let product of sampleProducts">
+            <div class="prodImgWrapper">
+                <img [src]="product.payload.doc.data().img" alt="{{product.payload.doc.data().img}}">
+            </div> 
+            <div>{{product.payload.doc.data().price}}</div>
+           <div>{{product.payload.doc.data().name}}</div> 
+        </div>
+    </div>
+</div>
