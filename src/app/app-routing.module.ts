@@ -5,6 +5,13 @@ import { PreHomeModule } from "./modules/pre-home/pre-home.module";
 
 const routes: Routes = [
   {
+    path: "planning",
+    loadChildren: () =>
+      import("./modules/my-planning/my-planning.module").then(
+        mod => mod.MyPlanningModule
+      )
+  },
+  {
     path: "assistant",
     loadChildren: () =>
       import("./modules/vendor-assist/vendor-assist.module").then(

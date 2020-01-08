@@ -5,6 +5,10 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { VendorAssistModule } from "./modules/vendor-assist/vendor-assist.module";
 import { PreHomeModule } from "./modules/pre-home/pre-home.module";
+import { AngularFireModule } from "@angular/fire";
+import { AngularFirestoreModule } from "@angular/fire/firestore";
+import { environment } from "../environments/environment";
+import { MyPlanningModule } from "./modules/my-planning/my-planning.module";
 import { ReusableModule } from "./modules/reusable/reusable.module";
 
 @NgModule({
@@ -16,6 +20,10 @@ import { ReusableModule } from "./modules/reusable/reusable.module";
     FormsModule,
     ReactiveFormsModule,
     PreHomeModule,
+    MyPlanningModule,
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
     ReusableModule
   ],
   providers: [],
