@@ -1,11 +1,10 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { SodimacHomeComponent } from './sodimac-home/sodimac-home.component';
-
+import { NgModule } from "@angular/core";
+import { Routes, RouterModule } from "@angular/router";
+import { SodimacHomeComponent } from "./sodimac-home/sodimac-home.component";
 
 const routes: Routes = [
   {
-    path: '',
+    path: "home",
     component: SodimacHomeComponent
   }
 ];
@@ -14,4 +13,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class HomeRoutingModule { }
+export class HomeRoutingModule {}
