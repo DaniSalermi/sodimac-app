@@ -1,36 +1,34 @@
-.container {
-  margin-top: 100px;
-  margin-left: 300px;
-  margin-right: 300px;
-  .hall {
-    margin-left: 405px;
-  }
-  .container-hall {
-    text-align: center;
-    .input-hall {
-      padding-top: -10px;
+@media (max-width: 600px) {
+  .container {
+    padding-left: 90px;
+    padding-top: 150px;
+
+    .container-hall {
+      padding-top: 0;
+      .p-hall {
+        padding-top: 1px;
+      }
     }
     .input-name {
-      padding-top: 10px;
+      padding-top: 2px;
     }
-  }
-  .search {
-    padding-top: 15px;
-    .btn-search {
-      font-size: 20px;
-      background-color: #c72729ca;
-      color: #fff;
-      border-bottom: 3px solid #4e3a5d;
-
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #dd0021;
-      color: #fff;
+    .search {
+      padding-top: 25px;
+      padding-left: 30px;
+      .btn-assistant {
+        position: absolute;
+        width: 172px;
+        height: 43px;
+        left: 97px;
+        top: 400px;
+        background-color: #dd0021;
+        color: #fff;
+        box-shadow: 1px #dd0021;
+      }
     }
   }
   input {
-    border: 1px solid black;
-    height: 25px;
+    height: 40px;
+    border: 1px solid gray;
   }
 }

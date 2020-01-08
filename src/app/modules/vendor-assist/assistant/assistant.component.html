@@ -1,8 +1,9 @@
 <div class="container">
-  <div class="hall">
-    <h3>Pasillo</h3>
-  </div>
-  <div class="container-hall">
+  <div class="container-input">
+    <div class="p-hall">
+      <p class="hall">Pasillo</p>
+    </div>
+
     <div class="input-hall">
       <input
         type="number"
@@ -10,6 +11,7 @@
         [formControl]="hallNumber"
       />
     </div>
+    <p>Nombre Cliente</p>
     <div class="input-name">
       <input
         type="text"
@@ -18,9 +20,10 @@
       />
     </div>
     <div class="search">
-      <button class="btn-search" type="submit" (click)="btnSale()">
-        Solicitar Vendedor
+      <button class="btn-assistant" type="submit" (click)="btnSale()">
+        Solicitar Asistencia
       </button>
     </div>
   </div>
 </div>
+<app-footer><app-footer></app-footer> </app-footer>

@@ -3,6 +3,7 @@ import { CommonModule } from "@angular/common";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { VendorAssistRoutingModule } from "./vendor-assist-routing.module";
 import { AssistantComponent } from "./assistant/assistant.component";
+import { ReusableModule } from "../reusable/reusable.module";
 
 @NgModule({
   declarations: [AssistantComponent],
@@ -10,7 +11,8 @@ import { AssistantComponent } from "./assistant/assistant.component";
     CommonModule,
     VendorAssistRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ReusableModule
   ],
   exports: [AssistantComponent]
 })

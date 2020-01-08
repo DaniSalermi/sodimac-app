@@ -5,14 +5,14 @@ import { PreHomeModule } from "./modules/pre-home/pre-home.module";
 
 const routes: Routes = [
   {
-    path: "asistencia",
+    path: "assistant",
     loadChildren: () =>
       import("./modules/vendor-assist/vendor-assist.module").then(
         mod => mod.VendorAssistModule
       )
   },
   {
-    path: "bienvenidos",
+    path: "welcome",
     loadChildren: () =>
       import("./modules/pre-home/pre-home.module").then(
         mod => mod.PreHomeModule
