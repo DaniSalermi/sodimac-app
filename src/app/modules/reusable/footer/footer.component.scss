@@ -1,15 +1,16 @@
 @media (max-width: 600px) {
   .container {
-    position: absolute;
-    width: 400px;
+    position: fixed;
+    width: 100%;
     height: 57px;
-    left: 0;
     top: 610px;
-    background-color: #0072ce;
+    background-color: var(--main-color);
     .text {
       color: #fff;
       p {
-        padding-left: 135px;
+        text-align: center;
+        padding-top: 12px;
+        font-size: 20px;
       }
     }
   }

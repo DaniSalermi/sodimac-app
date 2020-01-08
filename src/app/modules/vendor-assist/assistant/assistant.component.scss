@@ -1,26 +1,26 @@
 @media (max-width: 600px) {
   .container {
-    padding-left: 90px;
-    padding-top: 150px;
+    text-align: center;
+    padding-top: 100px; //padding top body app
 
-    .container-hall {
-      padding-top: 0;
-      .p-hall {
-        padding-top: 1px;
+    .container-input {
+      //container centrado
+      width: 50%;
+      margin: 0 auto;
+    }
+    .input {
+      //clase para contenedores de inputs
+      padding-top: 10px;
+      text-align: left;
+      p {
+        margin-bottom: 2px;
       }
     }
-    .input-name {
-      padding-top: 2px;
-    }
     .search {
-      padding-top: 25px;
-      padding-left: 30px;
+      padding-top: 25px; //margen entre input final y boton
       .btn-assistant {
-        position: absolute;
         width: 172px;
         height: 43px;
-        left: 97px;
-        top: 400px;
         background-color: #dd0021;
         color: #fff;
         box-shadow: 1px #dd0021;
