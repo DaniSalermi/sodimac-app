@@ -9,6 +9,7 @@ import { AngularFireModule } from "@angular/fire";
 import { AngularFirestoreModule } from "@angular/fire/firestore";
 import { environment } from "../environments/environment";
 import { MyPlanningModule } from "./modules/my-planning/my-planning.module";
+import { HomeModule } from './modules/home/home.module';
 import { ReusableModule } from "./modules/reusable/reusable.module";
 
 @NgModule({
@@ -21,7 +22,7 @@ import { ReusableModule } from "./modules/reusable/reusable.module";
     ReactiveFormsModule,
     PreHomeModule,
     MyPlanningModule,
-    AppRoutingModule,
+    HomeModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     ReusableModule

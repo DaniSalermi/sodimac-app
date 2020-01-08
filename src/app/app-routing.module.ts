@@ -1,9 +1,12 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
-import { VendorAssistModule } from "./modules/vendor-assist/vendor-assist.module";
-import { PreHomeModule } from "./modules/pre-home/pre-home.module";
 
 const routes: Routes = [
+  {
+        path: 'home',
+        loadChildren: () =>
+          import('./modules/home/home.module').then(mod => mod.HomeModule)
+  },
   {
     path: "planning",
     loadChildren: () =>

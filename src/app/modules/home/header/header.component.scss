@@ -1,0 +1,12 @@
+.homeHeader, .homeHeader .icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.homeHeader {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0; /* required */
+    z-index: 5;
+    background-color: white;
+}
