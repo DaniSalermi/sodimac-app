@@ -5,8 +5,8 @@ import { FooterComponent } from "./footer/footer.component";
 import { RouterModule } from "@angular/router";
 
 @NgModule({
-  declarations: [NavigationBarComponent],
+  declarations: [NavigationBarComponent, FooterComponent],
   imports: [CommonModule, RouterModule],
-  exports: [NavigationBarComponent]
+  exports: [NavigationBarComponent, FooterComponent]
 })
 export class ReusableModule {}
