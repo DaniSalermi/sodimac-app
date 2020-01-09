@@ -3,10 +3,11 @@ import { CommonModule } from '@angular/common';
 
 import { CatalogueRoutingModule } from './catalogue-routing.module';
 import { SampleDevCatalogueComponent } from './sample-dev-catalogue/sample-dev-catalogue.component';
+import { ProductToListComponent } from './product-to-list/product-to-list.component';
 
 
 @NgModule({
-  declarations: [SampleDevCatalogueComponent],
+  declarations: [SampleDevCatalogueComponent, ProductToListComponent],
   exports: [SampleDevCatalogueComponent],
   imports: [
     CommonModule,
