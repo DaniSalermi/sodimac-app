@@ -1,9 +1,13 @@
 import { Component, OnInit } from "@angular/core";
 import { MyPlanningCrudService } from "src/app/services/my-planning/my-planning-crud.service";
-import { AngularFirestore } from "@angular/fire/firestore";
+import { ActivatedRoute } from "@angular/router";
+import { Location } from "@angular/common";
+
 // neccessary import for using the arrayUnion method of firebase
 import * as fb from "firebase/app";
 import { Product } from "../../my-planning/planning-list/product";
+import { StringMap } from "@angular/compiler/src/compiler_facade_interface";
+import { on } from "cluster";
 
 @Component({
   selector: "app-details",
@@ -11,29 +15,27 @@ import { Product } from "../../my-planning/planning-list/product";
   styleUrls: ["./details.component.scss"]
 })
 export class DetailsComponent implements OnInit {
-  esto: any;
   oneProduct: any;
   showTheProducts = false;
+  currentId: string;
 
   constructor(
-    public myPlanningCrud: MyPlanningCrudService,
-    public afs: AngularFirestore
+    public myPlanningCrudeService: MyPlanningCrudService,
+    private activateRouter: ActivatedRoute,
+    private location: Location
   ) {}
 
   ngOnInit() {
-    this.getSingleProduct("359886-1");
+    this.getProduct();
   }
-  getSingleProduct(skuComing) {
-    let theProduct: any;
-    this.afs
-      .collection("products", ref => ref.where("sku", "==", `${skuComing}`))
-      .snapshotChanges()
-      .subscribe(whatComes => {
-        theProduct = whatComes[0].payload.doc.data() as Product;
+  getProduct() {
+    this.currentId = this.activateRouter.snapshot.paramMap.get("id");
 
-        this.oneProduct = theProduct;
-        this.showTheProducts = true;
-        console.log(this.oneProduct);
-      });
+    let nId = this.myPlanningCrudeService.getProduct(this.currentId);
+    nId.snapshotChanges().subscribe(whatCome => {
+      this.oneProduct = whatCome.payload.data();
+
+      this.showTheProducts = true;
+    });
   }
 }

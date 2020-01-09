@@ -5,16 +5,21 @@
     [items]="folderCarouselPpal"
     [carouselClasses]="['owl-theme', 'sliding']"
   >
-    <div class="item" *ngFor="let img of ImgCarouselPpal">
+    <div class="item" *ngFor="let item of products">
       <div style="align-content: center">
-        <img style="height: 260px;width:100%" src="{{ img }}" />
+        <div class="div-img" routerLink="/products/{{ item.payload.doc.id }}">
+          <img
+            style="height: 260px;width:100%"
+            [src]="item.payload.doc.data().img"
+          />
+        </div>
       </div>
     </div>
   </owl-carousel>
   <div class="scrollProd">
-    <div *ngFor="let img of ImgProducts">
-      <div>
-        <img class="ImgProd" src="{{ img }}" />
+    <div *ngFor="let photo of products">
+      <div class="div-img" routerLink="/products">
+        <img class="ImgProd" [src]="photo.payload.doc.data().img" />
       </div>
     </div>
   </div>

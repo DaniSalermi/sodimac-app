@@ -148,4 +148,7 @@ export class MyPlanningCrudService {
   getList(id) {
     return this.afs.collection("productLists").doc(id);
   }
+  getProduct(id) {
+    return this.afs.collection("products").doc(id);
+  }
 }
