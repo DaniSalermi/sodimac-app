@@ -12,6 +12,7 @@ import { MyPlanningModule } from "./modules/my-planning/my-planning.module";
 import { HomeModule } from "./modules/home/home.module";
 import { ReusableModule } from "./modules/reusable/reusable.module";
 import { AngularFireMessagingModule } from "@angular/fire/messaging";
+import { LocationModule } from "./modules/location/location.module";
 
 @NgModule({
   declarations: [AppComponent],
@@ -27,7 +28,8 @@ import { AngularFireMessagingModule } from "@angular/fire/messaging";
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     ReusableModule,
-    AngularFireMessagingModule
+    AngularFireMessagingModule,
+    LocationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
