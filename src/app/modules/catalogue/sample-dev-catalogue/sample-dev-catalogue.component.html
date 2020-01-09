@@ -4,10 +4,18 @@
     <div *ngIf="showTheProducts" class="eachProductWrapper">
         <div *ngFor="let product of sampleProducts">
             <div class="prodImgWrapper">
-                <img [src]="product.payload.doc.data().img" alt="{{product.payload.doc.data().img}}">
+                <img [src]="product.payload.doc.data().img" alt="{{product.payload.doc.data().name}}">
             </div> 
             <div>{{product.payload.doc.data().price}}</div>
            <div>{{product.payload.doc.data().name}}</div> 
+           <button class="btnAddToList" type="submit" (click)="addProdToList(product.payload.doc.id)">
+            Agregar a proyectos
+          </button>
         </div>
     </div>
+</div>
+
+<div *ngIf="showTheProjectList" class="projectListOnDemand">
+    PlaceHolder para la lista de proyectos a escoger
+    <app-product-to-list></app-product-to-list>
 </div>

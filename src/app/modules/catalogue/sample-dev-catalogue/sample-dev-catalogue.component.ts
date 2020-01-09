@@ -10,6 +10,7 @@ export class SampleDevCatalogueComponent implements OnInit {
 
 sampleProducts: any;
 showTheProducts = false;
+showTheProjectList = false;
 
   constructor(public planCrudService: MyPlanningCrudService) { }
 
@@ -18,6 +19,13 @@ showTheProducts = false;
       this.sampleProducts = productsComing;
       this.showTheProducts = true;
     });
+  }
+
+  addProdToList(productIdComing) {
+    // alojamos temporalmente el id de interés en un atributo del servicio
+    this.planCrudService.productIdToAdd = productIdComing;
+    console.log('este es el id que llega: ', productIdComing);
+    this.showTheProjectList = true;
   }
 
 }

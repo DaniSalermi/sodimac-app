@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
-import { map } from 'rxjs/operators';
+// neccessary import for using the arrayUnion method of firebase
+import * as fb from 'firebase/app';
 import { Product } from '../../modules/my-planning/planning-list/product';
 
 @Injectable({
@@ -11,6 +12,9 @@ export class MyPlanningCrudService {
   products: any;
   plannings: any;
   productListArr = [];
+  productIdToAdd = '';
+  listOfInterestId = '';
+  skuOfInterest = '';
 
   constructor(public afs: AngularFirestore) { }
   // CREATE PRODUCTS AND LISTS //
@@ -82,6 +86,29 @@ export class MyPlanningCrudService {
     return this.products = this.afs.collection('products', ref => ref.orderBy('name', 'asc')).snapshotChanges();
   }
 
+  // get single product
+
+  getProductSku(productId) {
+    const broughtProd = this.afs.collection('products').doc(productId);
+    console.log('este es el producto que se está trayendo: ', broughtProd);
+    broughtProd.snapshotChanges().subscribe(unwrappedProd => {
+      const product = unwrappedProd.payload.data() as Product;
+      this.skuOfInterest = product.sku;
+      this.addProducToProject(this.listOfInterestId, this.skuOfInterest);
+
+    });
+
+  }
+
+  // update the project products array
+
+  addProducToProject(projectId, productSku) {
+    console.log('este es el id del projecto y el sku a agregar: ', projectId, productSku);
+    this.afs.collection('planningLists').doc(projectId).update({
+      products: fb.firestore.FieldValue.arrayUnion(productSku)
+    });
+  }
+
   // get planning lists
 
   getPlannings() {
@@ -111,7 +138,6 @@ export class MyPlanningCrudService {
   getList(id) {
     return this.afs.collection('productLists').doc(id);
   }
-
 
 
 
