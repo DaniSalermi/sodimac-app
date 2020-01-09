@@ -1,0 +1,15 @@
+.gpsIcon img {
+    width: 75px;
+    height: 80px;
+}
+
+.gpsIcon, p {
+    text-align: center;
+}
+
+.gpsInfoContainer {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
