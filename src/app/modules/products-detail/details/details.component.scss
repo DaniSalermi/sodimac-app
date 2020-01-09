@@ -1,0 +1,47 @@
+.container {
+  text-align: center;
+  .div-img {
+    padding: 0;
+  }
+  .div-text {
+    text-align: left;
+    padding-left: 10px;
+    font-family: Lato;
+    .div-price {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .div-brand {
+      font-size: 16px;
+      color: rgba(31, 31, 31, 0.56);
+    }
+    .div-detail {
+      font-size: 18px;
+      color: rgba(31, 31, 31, 0.87);
+    }
+    .div-hall {
+      font-size: 18px;
+      color: #1f1f1f;
+      font-weight: 800;
+    }
+  }
+  .buttons {
+    padding-top: 8px;
+    .btn-hall {
+      background-color: #fff;
+      color: #dd0021;
+    }
+    .btn-add {
+      padding-top: 10px;
+
+      .btn-project {
+        background: #dd0021;
+        color: #fff;
+      }
+    }
+  }
+}
+button {
+  width: 100%;
+  padding: 10px;
+}
