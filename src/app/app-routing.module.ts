@@ -14,6 +14,16 @@ const routes: Routes = [
         mod => mod.MyPlanningModule
       )
   },
+
+  // path para entrar a la vista de desarrollo de productos temporal
+  {
+    path: "samplecat",
+    loadChildren: () =>
+      import("./modules/catalogue/catalogue.module").then(
+        mod => mod.CatalogueModule
+      )
+  },
+  // fin del path temporal
   {
     path: "assistant",
     loadChildren: () =>

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MyPlanningCrudService } from 'src/app/services/my-planning/my-planning-crud.service';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { Product } from './product';
+import { FormControl, FormGroup } from '@angular/forms';
 
 
 
@@ -21,6 +22,11 @@ export class PlanningListComponent implements OnInit {
   productOfInterest: any;
   showTheProduct = false;
   firstProductsArr = [];
+
+  // propiedad formulario reactivo para recibir el input del usuario
+  form = new FormGroup({
+    projectName: new FormControl(''),
+  });
 
   constructor(public afs: AngularFirestore, public planCrudService: MyPlanningCrudService) { }
 
@@ -71,9 +77,13 @@ export class PlanningListComponent implements OnInit {
         }
         })));
       }
+
+
+  // función que crea una nueva lista o proyecto de planificación
+  createProject() {
+    console.log('creating project list');
   }
 
-
-
+}
 
 
