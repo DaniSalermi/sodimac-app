@@ -19,16 +19,5 @@
       </div>
     </div>
   </div>
-  <owl-carousel
-    [options]="SlideOptions"
-    [items]="folderPublicidad"
-    [carouselClasses]="['owl-theme', 'sliding']"
-  >
-    <div class="item" *ngFor="let img of ImgCarouselPub">
-      <div style="align-content: center">
-        <img style="height: 85px;width:100%" src="{{ img }}" />
-      </div>
-    </div>
-  </owl-carousel>
 </div>
 <app-navigation-bar></app-navigation-bar>
