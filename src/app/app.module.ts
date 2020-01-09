@@ -9,8 +9,9 @@ import { AngularFireModule } from "@angular/fire";
 import { AngularFirestoreModule } from "@angular/fire/firestore";
 import { environment } from "../environments/environment";
 import { MyPlanningModule } from "./modules/my-planning/my-planning.module";
-import { HomeModule } from './modules/home/home.module';
+import { HomeModule } from "./modules/home/home.module";
 import { ReusableModule } from "./modules/reusable/reusable.module";
+import { ProductsDetailModule } from "./modules/products-detail/products-detail.module";
 
 @NgModule({
   declarations: [AppComponent],
@@ -25,7 +26,8 @@ import { ReusableModule } from "./modules/reusable/reusable.module";
     HomeModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
-    ReusableModule
+    ReusableModule,
+    ProductsDetailModule
   ],
   providers: [],
   bootstrap: [AppComponent]
