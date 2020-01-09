@@ -3,6 +3,30 @@
     justify-content: space-between;
 }
 
+.icons div {
+    align-items: flex-end;
+    display: flex;
+    padding-bottom: 10px; /* para alinear con el espacio vacío del logo */
+}
+
+.icons div img {
+    margin: 5px;
+}
+
+.shoppingCartIcon img, .searchIcon img {
+    max-width: 15px;
+    max-height: 15px;
+    min-width: 15px;
+    min-height: 15px;
+}
+
+.profileIcon img {
+    max-width: 26px;
+    max-height: 26px;
+    min-width: 26px;
+    min-height: 26px;
+}
+
 .homeHeader {
     position: sticky;
     position: -webkit-sticky;
