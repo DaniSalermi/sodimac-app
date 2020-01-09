@@ -18,9 +18,13 @@ export class SodimacHomeComponent implements OnInit {
 
   ImgProducts = [
     '../../../../assets/img/carousel-prod/prod1.png',
+    '../../../../assets/img/carousel-prod/540235-2.png',
     '../../../../assets/img/carousel-prod/prod2.png',
+    '../../../../assets/img/carousel-prod/372559-6.png',
     '../../../../assets/img/carousel-prod/prod3.png',
+    '../../../../assets/img/carousel-prod/359886-1.png',
     '../../../../assets/img/carousel-prod/prod4.png',
+    '../../../../assets/img/carousel-prod/278302-9.png',
     '../../../../assets/img/carousel-prod/prod5.png',
     '../../../../assets/img/carousel-prod/prod6.png'
   ];
