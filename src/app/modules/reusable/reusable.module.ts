@@ -4,10 +4,11 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
 import { FooterComponent } from './footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
+import { LocalUbicationComponent } from './local-ubication/local-ubication.component';
 
 @NgModule({
-  declarations: [NavigationBarComponent, FooterComponent, HeaderComponent],
+  declarations: [NavigationBarComponent, FooterComponent, HeaderComponent, LocalUbicationComponent],
   imports: [CommonModule, RouterModule],
-  exports: [NavigationBarComponent, FooterComponent, HeaderComponent]
+  exports: [NavigationBarComponent, FooterComponent, HeaderComponent, LocalUbicationComponent]
 })
 export class ReusableModule {}
