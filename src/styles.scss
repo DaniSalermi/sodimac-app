@@ -7,6 +7,7 @@
 
 :root {
   --main-color: #66afe7;
+  --secondary-color: #dd0021;
 }
 
 body {
@@ -23,4 +24,30 @@ h3,
 h4 {
   font-weight: normal;
   margin: 0;
+}
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+p {
+  font-size: 14px;
+}
+button {
+  box-sizing: none;
+  border: none;
+  cursor: pointer;
+}
+.red-button {
+  width: 187px;
+  height: 43px;
+  background-color: var(--secondary-color);
+  color: #fff;
+  box-shadow: 1px var(--secondary-color);
+  box-shadow: 5px 8px 15px rgba(0, 0, 0, 0.2);
+}
+input {
+  border: 1px solid #c4c4c4;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 10px;
 }
