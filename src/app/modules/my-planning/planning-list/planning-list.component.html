@@ -1,15 +1,20 @@
-<div class="planifTitle">Mi Planificación de Compras</div>
-<div class="planningWrapper">
-  <div *ngFor="let list of planLists; index as a">
-    <div class="eachPlanWrapper">
-      <!-- <a routerlinrouterLink="/proyecto/{{proyecto.payload.doc.id}}"> -->
-        <h4 class="planName">{{ list.payload.doc.data().plan_name }}</h4>
-        <h5>{{ list.payload.doc.data().products.length }} productos </h5>
-        <div class="firstProdImg" *ngIf="firstProductsArr[a]">
-          <img [src]="firstProductsArr[a].img" alt="{{firstProductsArr[a].name}}">
-        </div>
-        <h4 class="planStore">{{ list.payload.doc.data().store }}</h4>
-      <!-- </a> -->
+<div class="container-fluid location">
+  <app-header></app-header>
+
+  <div class="planifTitle">Mi Planificación de Compras</div>
+  <div class="planningWrapper">
+    <div *ngFor="let list of planLists; index as a">
+      <div class="eachPlanWrapper">
+        <!-- <a routerlinrouterLink="/proyecto/{{proyecto.payload.doc.id}}"> -->
+          <h4 class="planName">{{ list.payload.doc.data().plan_name }}</h4>
+          <h5>{{ list.payload.doc.data().products.length }} productos </h5>
+          <div class="firstProdImg" *ngIf="firstProductsArr[a]">
+            <img [src]="firstProductsArr[a].img" alt="{{firstProductsArr[a].name}}">
+          </div>
+          <h4 class="planStore">{{ list.payload.doc.data().store }}</h4>
+        <!-- </a> -->
+      </div>
     </div>
   </div>
 </div>
+<app-navigation-bar></app-navigation-bar>
