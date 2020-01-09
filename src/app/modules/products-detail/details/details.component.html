@@ -1,17 +1,15 @@
 <app-header></app-header>
-<div class="container">
+<div class="container" *ngIf="showTheProducts">
   <div class="div-img">
-    <img
-      src="https://sodimac.scene7.com/is/image/SodimacCL/3172996_01?$producto495$&id=Wjgnz3&fmt=jpg&fit=constrain,1&wid=493&hei=493"
-      alt="llave"
-      width="80%"
-    />
+    <img src="{{ oneProduct.img }}" alt="llave" width="80%" />
   </div>
   <div class="div-text">
-    <div class="div-price">$29.990</div>
-    <div class="div-brand">Hasbro</div>
-    <div class="div-detail">Pieza para la cama</div>
-    <div class="div-hall">Encuentralo en el pasillo 20</div>
+    <div class="div-price">${{ oneProduct.price }}</div>
+    <div class="div-brand">{{ oneProduct.brand }}</div>
+    <div class="div-detail">
+      {{ oneProduct.name }}
+    </div>
+    <div class="div-hall">{{ oneProduct.category }}</div>
   </div>
   <div class="buttons">
     <div class="btn-ubi">

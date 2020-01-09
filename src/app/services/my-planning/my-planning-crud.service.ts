@@ -14,7 +14,7 @@ export class MyPlanningCrudService {
   productIdToAdd = "";
   listOfInterestId = "";
   skuOfInterest = "";
-
+  firstProductsArr = [];
   constructor(public afs: AngularFirestore) {}
   // CREATE PRODUCTS AND LISTS //
 
