@@ -7,8 +7,12 @@ const routes: Routes = [
   {
     path: '',
     component: PlanningListComponent
-  }
-];
+  }];
+//   {
+//     path: '',
+//     component: PlanningListDetails
+//   }
+// ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
