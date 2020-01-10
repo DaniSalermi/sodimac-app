@@ -13,7 +13,7 @@ export class SodimacHomeComponent implements OnInit {
     "../../../../assets/img/carousel-ppal/vmb-terrazas-03012020-b.jpg",
     "../../../../assets/img/carousel-ppal/vmb-tableros-03012020-b.jpg",
     "../../../../assets/img/carousel-ppal/vmb-especial-verano-03012020.jpg",
-    "../../../../asse ts/img/carousel-ppal/vmb-closet-03012020.jpg",
+    "../../../../assets/img/carousel-ppal/vmb-closet-03012020.jpg",
     "../../../../assets/img/carousel-ppal/vmb-climatizacion-03012020.jpg",
     "../../../../assets/img/carousel-ppal/vmb-ceramicas-03012020.jpg"
   ];
