@@ -26,3 +26,21 @@
     }
   }
 }
+
+.succeed-message {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .image {
+    margin-bottom: 25px;
+  }
+
+  .text {
+    font-size: 16px;
+    max-width: 234px;
+    text-align: center;
+  }
+}
