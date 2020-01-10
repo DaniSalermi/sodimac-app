@@ -8,7 +8,7 @@ import { ProductToListComponent } from './product-to-list/product-to-list.compon
 
 @NgModule({
   declarations: [SampleDevCatalogueComponent, ProductToListComponent],
-  exports: [SampleDevCatalogueComponent],
+  exports: [SampleDevCatalogueComponent, ProductToListComponent],
   imports: [
     CommonModule,
     CatalogueRoutingModule
