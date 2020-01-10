@@ -27,8 +27,7 @@ export class SodimacHomeComponent implements OnInit {
 
   ImgCarouselPub = [
     "../../../../assets/img/publicidad/nuevoCatalogo-05-11062019.jpg",
-    "../../../../assets/img/publicidad/bnn-votados-a.jpg",
-    "../../../../assets/img/publicidad/bnn-pnp-small.jpg"
+    "../../../../assets/img/publicidad/bnn-votados-a.jpg"
   ];
 
   SlideOptions = { items: 1, dots: true, nav: true };
