@@ -1,40 +1,40 @@
-@media (max-width: 600px) {
-  .container {
-    text-align: center;
-
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(../../../../assets/background-where-to-buy.jpg);
+  .selection {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0 56px;
+    .logo {
+      img {
+        max-width: 70px;
+        mix-blend-mode: darken;
+      }
+    }
     .div-mode {
-      position: absolute;
       width: 199px;
       height: 71px;
       left: 90px;
       top: 97px;
-      font-family: Lato;
-      font-size: 18px;
-      line-height: 22px;
-      color: #1f1f1f;
+
+      h2 {
+        font-size: 18px;
+      }
     }
     .buttons {
       padding-top: 0px;
-    }
-    .btn-store {
-      background-color: #dd0021;
-      position: absolute;
-      width: 187px;
-      height: 36px;
-      left: 90px;
-      top: 242px;
-      color: #fff;
-      box-shadow: 1px #dd0021;
-    }
-    .btn-online {
-      position: absolute;
-      width: 187px;
-      height: 36px;
-      left: 90px;
-      top: 300px;
-      background-color: #dd0021;
-      color: #fff;
-      box-shadow: 1px #dd0021;
+
+      .div-store {
+        &:first-child {
+          margin-bottom: 20px;
+        }
+      }
     }
   }
 }
