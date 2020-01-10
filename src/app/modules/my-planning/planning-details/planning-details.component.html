@@ -1,1 +1,36 @@
-<p>planning-details works!</p>
+<app-header></app-header>
+<app-local-ubication></app-local-ubication>
+<div *ngIf="loading" class="planWrapping">
+  <div class="prodImgsWrapper">
+    <div class="projectName">
+      <strong>Proyecto:</strong> {{ planning.plan_name }}
+    </div>
+    <div *ngFor="let product of productsArr" class="productsWrapper">
+      <div class="eachProductWrapper">
+        <div class="image">
+          <div class="productImg">
+            <img [src]="product.img" alt="product.name" width="81" />
+          </div>
+        </div>
+        <div class="info">
+          <div class="productName">{{ product.name }}</div>
+          <div class="productHall">Pasillo #{{ product.hall }}</div>
+          <br />
+          <div class="red-button">Comprar</div>
+        </div>
+
+        <div class="listStore">{{ product.store }}</div>
+      </div>
+    </div>
+    <div class="message">
+      <div class="text">
+        Agenda una visita con nosotros para orientarte con tu proyecto:
+      </div>
+      <br />
+      <div class="red-button">Agendar con vendedor</div>
+      <br />
+      <div class="red-button">Agendar con diseñador</div>
+    </div>
+  </div>
+</div>
+<app-navigation-bar></app-navigation-bar>

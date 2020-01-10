@@ -5,9 +5,12 @@
         <div (click)="addToThisList(project.payload.doc.id)" class="plainTextList"><img src="../../../../assets/projectListBullet.svg">{{ project.payload.doc.data().plan_name }}</div>
     </div>
 </div>
+<div class="closeIt"><img (click)="addedOk()" src="../../../../assets/xToClose.svg"> Cancelar</div>
 </div>
 
 <div *ngIf="leTheUserKnow" class="addedConfirmation">
+    <img (click)="addedOk()" src="../../../../assets/xToClose.svg">
     <img src="../../../../assets/addedChecked.svg">
     Tu producto ha sido guardado con éxito!
+
 </div>

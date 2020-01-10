@@ -1,0 +1,55 @@
+.planWrapping {
+  .prodImgsWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0 30px 130px;
+    .projectName {
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
+
+    .productsWrapper {
+      .eachProductWrapper {
+        display: flex;
+        font-size: 16px;
+        margin-bottom: 20px;
+
+        .productName {
+          font-weight: bold;
+        }
+
+        .image {
+          margin-right: 26px;
+        }
+
+        .red-button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 126px;
+          height: 36px;
+        }
+      }
+    }
+
+    .message {
+      margin-top: 40px;
+      font-size: 18px;
+
+      .text {
+        font-weight: bold;
+      }
+
+      .red-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 234px;
+        height: 36px;
+        margin: 0 auto;
+      }
+    }
+  }
+}

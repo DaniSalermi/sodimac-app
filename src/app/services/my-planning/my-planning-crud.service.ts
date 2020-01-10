@@ -11,9 +11,10 @@ export class MyPlanningCrudService {
   products: any;
   plannings: any;
   productListArr = [];
-  productIdToAdd = "";
-  listOfInterestId = "";
-  skuOfInterest = "";
+  productIdToAdd = '';
+  listOfInterestId = '';
+  skuOfInterest = '';
+  productsIdInList = [];
   firstProductsArr = [];
   constructor(public afs: AngularFirestore) {}
   // CREATE PRODUCTS AND LISTS //
@@ -126,28 +127,28 @@ export class MyPlanningCrudService {
       .snapshotChanges());
   }
 
-  // get single product dejar comentado por favor
+  // get single product by sku
 
-  // getProduct(sku) {
-  //   let theProduct: any;
-  //   console.log('está ejecutandose getProduct en el servicio');
-  //   const skuComing = sku;
-  //   console.log('este es el sku que está entrando en la búsqueda en el servicio: ', skuComing);
-  //   console.log('this.afs...', this.afs.collection(
-  //     'products', ref => ref.where('sku', '==', `${skuComing}`))
-  //     .snapshotChanges().subscribe(whatComes => whatComes.forEach(element => {
-  //        theProduct = element.payload.doc.data() as Product;
-  //        console.log('ya tengo el producto en el servicio: ', theProduct);
-  //        theProduct.id = element.payload.doc.id;
-  //       })));
-  //   return theProduct;
-  // }
 
-  // get single list
+  bringProductBySku(sku) {
+    let theProduct: any;
+    const skuComing = sku;
+    // let theProducToAdd = {};
+    this.afs.collection(
+      'products', ref => ref.where('sku', '==', `${skuComing}`))
+      .snapshotChanges().subscribe(whatComes => whatComes.forEach(element => {
+        theProduct = element.payload.doc.data() as Product;
+        console.log('ya tengo el producto en el servicio: ', theProduct);
+        this.productListArr.push(theProduct);
+      }));
+  }
+
+  // get single list and product by id
 
   getList(id) {
-    return this.afs.collection("productLists").doc(id);
+    return this.afs.collection('planningLists').doc(id);
   }
+
   getProduct(id) {
     return this.afs.collection("products").doc(id);
   }

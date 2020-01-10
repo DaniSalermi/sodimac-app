@@ -32,8 +32,6 @@ export class PlanningListComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    // this.planCrudService.addProduct();
-    // this.planCrudService.addPlanList();
     this.planCrudService.getPlannings().subscribe(whatComes => {
       this.planLists = whatComes;
       this.planLists.forEach((element, index) => {
