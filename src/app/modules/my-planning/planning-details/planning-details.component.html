@@ -1,1 +1,16 @@
-<p>planning-details works!</p>
+
+<div *ngIf="loading" class="planWrapping">
+  <div class="prodImgsWrapper">
+    <div class="projectName">Proyecto: {{ planning.plan_name }}</div>
+    <div *ngFor="let product of productsArr" class="productsWrapper">
+      <div class="eachProductWrapper">
+        <div class="productName">{{product.name}}</div>
+        <div class="productHall">Pasillo #{{product.hall}}</div>
+        <div class="productImg"><img [src]="product.img" alt="product.name"></div>
+        <div class="listStore">{{product.store}}</div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
