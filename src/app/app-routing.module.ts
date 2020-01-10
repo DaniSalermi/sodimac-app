@@ -32,6 +32,13 @@ const routes: Routes = [
       )
   },
   {
+    path: "products",
+    loadChildren: () =>
+      import("./modules/products-detail/products-detail.module").then(
+        mod => mod.ProductsDetailModule
+      )
+  },
+  {
     path: "location",
     loadChildren: () =>
       import("./modules/location/location.module").then(

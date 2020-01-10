@@ -11,6 +11,7 @@ import { environment } from "../environments/environment";
 import { MyPlanningModule } from "./modules/my-planning/my-planning.module";
 import { HomeModule } from "./modules/home/home.module";
 import { ReusableModule } from "./modules/reusable/reusable.module";
+import { ProductsDetailModule } from "./modules/products-detail/products-detail.module";
 import { AngularFireMessagingModule } from "@angular/fire/messaging";
 import { LocationModule } from "./modules/location/location.module";
 
@@ -28,6 +29,7 @@ import { LocationModule } from "./modules/location/location.module";
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     ReusableModule,
+    ProductsDetailModule,
     AngularFireMessagingModule,
     LocationModule
   ],
