@@ -1,24 +1,34 @@
 <app-header></app-header>
+
 <div class="container">
   <div class="container-input">
+    <div class="title">
+      <h1>Solicita asistencia</h1>
+    </div>
+    <div class="explain">
+      <p>
+        Aquí podrás solicitar a un asistente de Homecenter Sodimac para que te
+        ayude en orientación y búsqueda de un producto.
+      </p>
+    </div>
     <div class="input">
       <p>Pasillo</p>
       <input
         type="number"
-        placeholder="  Numero de pasillo"
-        [formControl]="hallNumber"
+        placeholder="Número de pasillo Ej. 2"
+        [formControl]="hall"
       />
     </div>
     <div class="input">
       <p>Nombre Cliente</p>
       <input
         type="text"
-        placeholder="  Ingresa tu Nombre"
-        [formControl]="name"
+        placeholder="Ingresa tu nombre"
+        [formControl]="clientName"
       />
     </div>
     <div class="search">
-      <button class="btn-assistant" type="submit" (click)="btnSale()">
+      <button class="red-button" (click)="saveClient()">
         Solicitar Asistencia
       </button>
     </div>

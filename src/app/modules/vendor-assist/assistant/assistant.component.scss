@@ -1,12 +1,14 @@
 @media (max-width: 600px) {
   .container {
-    text-align: center;
-    padding-top: 100px; //padding top body app
-
+    display: flex;
+    margin-top: 40px; //padding top body app
     .container-input {
       //container centrado
-      width: 50%;
+      width: 90%;
       margin: 0 auto;
+      .title {
+        margin-bottom: 20px;
+      }
     }
     .input {
       //clase para contenedores de inputs
@@ -14,21 +16,13 @@
       text-align: left;
       p {
         margin-bottom: 2px;
+        font-weight: bold;
       }
     }
     .search {
-      padding-top: 25px; //margen entre input final y boton
-      .btn-assistant {
-        width: 172px;
-        height: 43px;
-        background-color: #dd0021;
-        color: #fff;
-        box-shadow: 1px #dd0021;
-      }
+      margin-top: 40px; //margen entre input final y boton
+      display: flex;
+      justify-content: center;
     }
-  }
-  input {
-    height: 40px;
-    border: 1px solid gray;
   }
 }
