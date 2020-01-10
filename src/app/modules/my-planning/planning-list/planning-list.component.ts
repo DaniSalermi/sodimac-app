@@ -31,8 +31,6 @@ export class PlanningListComponent implements OnInit {
   constructor(public afs: AngularFirestore, public planCrudService: MyPlanningCrudService) { }
 
   ngOnInit() {
-    // this.planCrudService.addProduct();
-    // this.planCrudService.addPlanList();
     this.planCrudService.getPlannings().subscribe(whatComes => {
       this.planLists = whatComes;
       this.planLists.forEach((element, index) => {

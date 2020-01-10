@@ -1,15 +1,39 @@
-<div class="planifTitle">Mi Planificación de Compras</div>
-<div class="planningWrapper">
-  <div *ngFor="let list of planLists; index as a">
-    <div routerLink="/planning/{{list.payload.doc.id}}" class="eachPlanWrapper">
-      <!-- <a > -->
-        <h4 class="planName">{{ list.payload.doc.data().plan_name }}</h4>
-        <h5>{{ list.payload.doc.data().products.length }} productos </h5>
-        <div class="firstProdImg" *ngIf="firstProductsArr[a]">
-          <img [src]="firstProductsArr[a].img" alt="{{firstProductsArr[a].name}}">
+<div class="container-fluid containerPlanning">
+  <app-header></app-header>
+  <app-local-ubication></app-local-ubication>
+
+  <div>
+    <p class="planText createInvitation">+ Crear proyecto nuevo</p>
+    <div class="planningWrapper">
+      <div *ngFor="let list of planLists; index as a">
+        <div routerLink="/planning/{{list.payload.doc.id}}" class="eachPlanWrapper">
+          <div class="firstProdImg" *ngIf="firstProductsArr[a]">
+            <img [src]="firstProductsArr[a].img" alt="{{firstProductsArr[a].name}}">
+          </div>
+          <div>
+            <p class="planText planName">{{ list.payload.doc.data().plan_name }}</p>
+            <p class="planText planProd">{{ list.payload.doc.data().products.length }} productos </p>
+            <div class="planStore">
+              <div class="gpsSimple"><img src="../../../../assets/img/logos/gps-simple.svg" alt="gps simple image">
+              </div>
+              <p class="planText">Homecenter {{ list.payload.doc.data().store }}</p>
+            </div>
+          </div>
         </div>
-        <h4 class="planStore">{{ list.payload.doc.data().store }}</h4>
-      <!-- </a> -->
+      </div>
     </div>
+    <p class="planText textVisit">Agenda una visita con nosotros</p>
+    <br>
+    <div class="buttons">
+      <div>
+        <a routerLink="#">
+          <button class="btn-visit">Agendar visita</button>
+        </a>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
   </div>
 </div>
+<app-navigation-bar></app-navigation-bar>
