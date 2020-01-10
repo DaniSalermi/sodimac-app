@@ -1,24 +1,19 @@
+<app-header></app-header>
 <div class="container-fluid sodimacHome">
-  <app-header></app-header>
   <owl-carousel
     [options]="SlideOptions"
     [items]="folderCarouselPpal"
     [carouselClasses]="['owl-theme', 'sliding']"
   >
-    <div class="item" *ngFor="let item of products">
+    <div class="item" *ngFor="let img of ImgCarouselPpal">
       <div style="align-content: center">
-        <div class="div-img" routerLink="/products/{{ item.payload.doc.id }}">
-          <img
-            style="height: 260px;width:100%"
-            [src]="item.payload.doc.data().img"
-          />
-        </div>
+        <img style="height: 260px;width:100%" src="{{ img }}" />
       </div>
     </div>
   </owl-carousel>
   <div class="scrollProd">
     <div *ngFor="let photo of products">
-      <div class="div-img" routerLink="/products">
+      <div class="div-img" routerLink="/products/{{ photo.payload.doc.id }}">
         <img class="ImgProd" [src]="photo.payload.doc.data().img" />
       </div>
     </div>
