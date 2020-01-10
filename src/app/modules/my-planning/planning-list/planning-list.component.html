@@ -1,7 +1,6 @@
 <div class="container-fluid containerPlanning">
   <app-header></app-header>
   <app-local-ubication></app-local-ubication>
-
   <div>
     <p class="planText createInvitation">+ Crear proyecto nuevo</p>
     <div class="planningWrapper">
@@ -14,8 +13,7 @@
             <p class="planText planName">{{ list.payload.doc.data().plan_name }}</p>
             <p class="planText planProd">{{ list.payload.doc.data().products.length }} productos </p>
             <div class="planStore">
-              <div class="gpsSimple"><img src="../../../../assets/img/logos/gps-simple.svg" alt="gps simple image">
-              </div>
+              <div class="gpsSimple"><img src="../../../../assets/img/logos/gps-simple.svg" alt="gps simple image"></div>
               <p class="planText">Homecenter {{ list.payload.doc.data().store }}</p>
             </div>
           </div>
@@ -26,9 +24,9 @@
     <br>
     <div class="buttons">
       <div>
-        <a routerLink="#">
-          <button class="btn-visit">Agendar visita</button>
-        </a>
+          <a routerLink="#">
+              <button class="btn-visit">Agendar visita</button>
+          </a>
       </div>
     </div>
     <br>

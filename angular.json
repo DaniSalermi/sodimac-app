@@ -25,16 +25,18 @@
             "aot": false,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/firebase-messaging-sw.js",
+              "src/manifest.json"
             ],
             "styles": [
               "src/styles.scss",
-              "./node_modules/owl.carousel/dist/assets/owl.carousel.min.css",  
-              "./node_modules/owl.carousel/dist/assets/owl.theme.default.min.css" 
+              "./node_modules/owl.carousel/dist/assets/owl.carousel.min.css",
+              "./node_modules/owl.carousel/dist/assets/owl.theme.default.min.css"
             ],
             "scripts": [
-              "./node_modules/jquery/dist/jquery.min.js",  
-             "./node_modules/owl.carousel/dist/owl.carousel.min.js"
+              "./node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/owl.carousel/dist/owl.carousel.min.js"
             ]
           },
           "configurations": {
@@ -93,13 +95,8 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.scss"],
             "scripts": []
           }
         },
@@ -111,9 +108,7 @@
               "tsconfig.spec.json",
               "e2e/tsconfig.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         },
         "e2e": {
@@ -129,6 +124,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "sodimac-app"
 }
