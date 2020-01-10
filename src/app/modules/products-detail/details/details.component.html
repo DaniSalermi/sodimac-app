@@ -1,0 +1,23 @@
+<app-header></app-header>
+<div class="container" *ngIf="showTheProducts">
+  <div class="div-img">
+    <img src="{{ oneProduct.img }}" alt="llave" width="80%" />
+  </div>
+  <div class="div-text">
+    <div class="div-price">${{ oneProduct.price }}</div>
+    <div class="div-brand">{{ oneProduct.brand }}</div>
+    <div class="div-detail">
+      {{ oneProduct.name }}
+    </div>
+    <div class="div-hall">Encuéntralo en el pasillo{{ oneProduct.hall }}</div>
+  </div>
+  <div class="buttons">
+    <div class="btn-ubi">
+      <button class="btn-hall">Ver Ubicación</button>
+    </div>
+    <div class="btn-add">
+      <button class="btn-project">Agregar a proyecto</button>
+    </div>
+  </div>
+</div>
+<app-navigation-bar></app-navigation-bar>

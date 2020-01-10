@@ -12,13 +12,15 @@
     position: absolute;
     z-index: 1;
     margin-top: -33px;
-    margin-left: -4px;
+    margin-left: -1px;
   }
   .icon-bar {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex: 1;
+
     a {
       img {
         width: 28px;
@@ -35,6 +37,7 @@
     justify-content: center;
     align-items: center;
     z-index: 2;
+    flex: 1;
     a {
       img {
         width: 45px;
