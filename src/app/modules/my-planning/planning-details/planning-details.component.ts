@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { MyPlanningCrudService } from '../../../services/my-planning/my-planning-crud.service';
-import { Plan } from './Plan';
+import { Plan } from './plan';
 
 @Component({
   selector: 'app-planning-details',
