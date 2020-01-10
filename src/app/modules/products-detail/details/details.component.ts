@@ -3,12 +3,6 @@ import { MyPlanningCrudService } from "src/app/services/my-planning/my-planning-
 import { ActivatedRoute } from "@angular/router";
 import { Location } from "@angular/common";
 
-// neccessary import for using the arrayUnion method of firebase
-import * as fb from "firebase/app";
-import { Product } from "../../my-planning/planning-list/product";
-import { StringMap } from "@angular/compiler/src/compiler_facade_interface";
-import { on } from "cluster";
-
 @Component({
   selector: "app-details",
   templateUrl: "./details.component.html",
@@ -17,7 +11,7 @@ import { on } from "cluster";
 export class DetailsComponent implements OnInit {
   oneProduct: any;
   showTheProducts = false;
-  currentId: string;
+  currentId: any;
 
   constructor(
     public myPlanningCrudeService: MyPlanningCrudService,
