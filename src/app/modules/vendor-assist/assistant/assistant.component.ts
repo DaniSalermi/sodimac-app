@@ -11,6 +11,7 @@ export class AssistantComponent implements OnInit {
   hall = new FormControl("");
   clientName = new FormControl("");
   halls: any = [];
+  send = false;
 
   constructor(private waitlist: WaitlistService) {}
 
@@ -37,5 +38,6 @@ export class AssistantComponent implements OnInit {
       halldata.number,
       this.clientName.value
     );
+    this.send = true;
   }
 }

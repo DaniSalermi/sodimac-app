@@ -1,6 +1,6 @@
 <app-header></app-header>
 
-<div class="container">
+<div class="container" *ngIf="!send">
   <div class="container-input">
     <div class="title">
       <h1>Solicita asistencia</h1>
@@ -33,5 +33,18 @@
       </button>
     </div>
   </div>
+</div>
+<div class="succeed-message" *ngIf="send">
+  <div class="image"><img src="/assets/receive.jpg" alt="" /></div>
+  <div class="text">
+    Tu solicitud ha sido recibida con exito, por favor espera al vendedor que te
+    ayudara con tus dudas.
+  </div>
+  <br />
+  <a routerLink="/home">
+    <button class="red-button">
+      Continuar
+    </button>
+  </a>
 </div>
 <app-navigation-bar></app-navigation-bar>
