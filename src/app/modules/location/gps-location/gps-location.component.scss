@@ -1,0 +1,56 @@
+.gpsIcon img {
+    width: 75px;
+    height: 80px;
+}
+
+.gpsIcon, p, .buttons {
+    text-align: center;
+}
+
+.gpsInfoContainer {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gpsMessage, .gpsLocationMessage, .gpsMessageOption, .btn-continue {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 19px;
+}
+
+.gpsLocationMessage, .gpsMessageOption {
+    color: #0072CE;
+}
+
+.gpsMessage {
+    color: #1F1F1F;
+    font-size: 18px;
+}
+
+.gpsLocationMessage {
+    font-size: 24px;
+}
+
+.gpsMessageOption {
+    font-size: 16px;
+}
+
+.buttons {
+    padding-top: 0px;
+  }
+
+.btn-continue {
+    background-color: #dd0021;
+    box-shadow: 1px #dd0021;
+    border: none;
+    width: 70vw;
+    height: 36px;
+    left: 90px;
+    top: 242px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 22px;
+}

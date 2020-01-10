@@ -12,6 +12,8 @@ import { MyPlanningModule } from "./modules/my-planning/my-planning.module";
 import { HomeModule } from "./modules/home/home.module";
 import { ReusableModule } from "./modules/reusable/reusable.module";
 import { ProductsDetailModule } from "./modules/products-detail/products-detail.module";
+import { AngularFireMessagingModule } from "@angular/fire/messaging";
+import { LocationModule } from "./modules/location/location.module";
 
 @NgModule({
   declarations: [AppComponent],
@@ -27,7 +29,9 @@ import { ProductsDetailModule } from "./modules/products-detail/products-detail.
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     ReusableModule,
-    ProductsDetailModule
+    ProductsDetailModule,
+    AngularFireMessagingModule,
+    LocationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
