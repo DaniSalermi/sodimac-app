@@ -16,7 +16,7 @@ export class ProductToListComponent implements OnInit {
   constructor(public planCrudService: MyPlanningCrudService) { }
 
   ngOnInit() {
-    this.planCrudService.getPlannings().subscribe( planningsC => {
+    this.planCrudService.getPlannings().subscribe(planningsC => {
       this.planningsList = planningsC;
       console.log('this.planningList', this.planningsList);
       this.showTheList = true;
@@ -31,6 +31,11 @@ export class ProductToListComponent implements OnInit {
     // arrancamos la cascada de funciones para actualizar la lista en el servicio
     this.planCrudService.getProductSku(this.planCrudService.productIdToAdd);
     this.leTheUserKnow = true;
+  }
+
+  addedOk() {
+    this.leTheUserKnow = false;
+    this.showTheList = false;
   }
 
 }

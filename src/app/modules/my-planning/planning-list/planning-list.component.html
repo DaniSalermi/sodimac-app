@@ -1,13 +1,11 @@
 <div class="container-fluid containerPlanning">
   <app-header></app-header>
   <app-local-ubication></app-local-ubication>
-  
   <div>
     <p class="planText createInvitation">+ Crear proyecto nuevo</p>
     <div class="planningWrapper">
       <div *ngFor="let list of planLists; index as a">
-        <div class="eachPlanWrapper">
-          <!-- <a routerlinrouterLink="/proyecto/{{proyecto.payload.doc.id}}"> -->
+        <div routerLink="/planning/{{list.payload.doc.id}}" class="eachPlanWrapper">
           <div class="firstProdImg" *ngIf="firstProductsArr[a]">
             <img [src]="firstProductsArr[a].img" alt="{{firstProductsArr[a].name}}">
           </div>
@@ -19,7 +17,6 @@
               <p class="planText">Homecenter {{ list.payload.doc.data().store }}</p>
             </div>
           </div>
-          <!-- </a> -->
         </div>
       </div>
     </div>
